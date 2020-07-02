@@ -374,7 +374,7 @@ void assert_dbl_far(double exp, double real, double tol, const char* caller, int
       absdiff *= -1;
     }
     if (absdiff <= tol) {
-        CTEST_ERR("%s:%d  expected %0.3e, got %0.3e (diff %0.3e, tol %0.3e)", caller, line, exp, real, diff, tol);
+        CTEST_ERR("%s:%d  expected NOT %0.3e, got %0.3e (diff %0.3e, tol %0.3e)", caller, line, exp, real, diff, tol);
     }
 }
 
